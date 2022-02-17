@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all exynos products
-# that inherit from xdroid
+# that inherit from maritim
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -10,14 +10,14 @@ endif
 endif
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/xdroid/sepolicy/exynos/private
+    device/maritim/sepolicy/exynos/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/xdroid/sepolicy/exynos/dynamic \
-    device/xdroid/sepolicy/exynos/system
+    device/maritim/sepolicy/exynos/dynamic \
+    device/maritim/sepolicy/exynos/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/xdroid/sepolicy/exynos/dynamic \
-    device/xdroid/sepolicy/exynos/vendor
+    device/maritim/sepolicy/exynos/dynamic \
+    device/maritim/sepolicy/exynos/vendor
 endif
